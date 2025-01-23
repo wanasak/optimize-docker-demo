@@ -1,0 +1,11 @@
+FROM ubuntu:latest
+
+COPY File1 /tmp/File1
+
+COPY File2 /tmp/File2
+
+COPY File3 /tmp/File3
+
+# COPY File4 /tmp/File4
+
+# COPY File5 /tmp/File5
