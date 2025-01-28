@@ -1,0 +1,12 @@
+# Explore the image layers
+docker run --rm -it \
+    -v /var/run/docker.sock:/var/run/docker.sock \
+    wagoodman/dive:latest <image:tag>
+
+# Explore the image layers & verify the results
+docker run --rm -it \
+    -v /var/run/docker.sock:/var/run/docker.sock \
+    wagoodman/dive:latest --ci <image:tag> --lowestEfficiency=0.8 --highestUserWastedPercent=0.45
+
+# References
+https://github.com/wagoodman/dive
